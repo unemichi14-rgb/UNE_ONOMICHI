@@ -288,7 +288,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .fv_inner {
-    background: url(../img/onomichi_PC.webp) center/cover no-repeat;
+    background: url(../img/onomichi_pc.webp) center/cover no-repeat;
     height: 740px;
     padding-top: 35px;
   }
@@ -1253,7 +1253,7 @@ body {
 
 .onomichi_logo {
   position: absolute;
-  background: url(../img/ONOMICHI\ \(pc\).svg) center/cover no-repeat;
+  background: url(../img/onomichi\ \(pc\).svg) center/cover no-repeat;
   width: 100vw;
   max-width: 354.642px;
   aspect-ratio: 354.642/37.2;
@@ -1565,15 +1565,15 @@ body {
 }
 
 .how-to-enter_flex-step:nth-child(1) .flex-step_head {
-  background: url(../img/Union1.svg) center/cover no-repeat;
+  background: url(../img/union1.svg) center/cover no-repeat;
 }
 
 .how-to-enter_flex-step:nth-child(2) .flex-step_head {
-  background: url(../img/Union2\ .svg) center/cover no-repeat;
+  background: url(../img/union2\ .svg) center/cover no-repeat;
 }
 
 .how-to-enter_flex-step:nth-child(3) .flex-step_head {
-  background: url(../img/Union3\ .svg) center/cover no-repeat;
+  background: url(../img/union3\ .svg) center/cover no-repeat;
 }
 
 .flex-step_head-content {
