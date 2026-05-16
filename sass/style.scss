@@ -122,7 +122,7 @@ body {
   margin: 0 auto;
   display: block;
   white-space: nowrap;
-  padding: 4px 22px 6px 22px;
+  padding: 4px 22px 4px 22px;
   height: 40px;
   color: $color-base;
   background-color: #fff;
@@ -136,7 +136,7 @@ body {
   box-shadow: 0 4px 0 $color-base;
 
   @include mq(pc) {
-    padding: 7px 37px 9px 37px;
+    padding: 7px 37px 7px 37px;
     height: 56px;
     font-size: 20px;
     border: 3px solid $color-base;
@@ -1215,7 +1215,7 @@ body {
 }
 
 .onomichi_swiper {
-  width: 100%;
+  width: 100vw;
   height: auto;
   overflow: hidden !important;
 }
@@ -1939,15 +1939,14 @@ body {
     cursor: pointer;
     border-radius: 8px;
 
-    @include mq(pc){
+    @include mq(pc) {
       border-radius: 20px;
     }
   }
 
   &:hover {
     .prizes-box_button {
-      box-shadow: inset 0 0 0 2px #9ed0e0;
-      
+      box-shadow: inset 0 0 0 5px #9ed0e0;
     }
 
     .prizes-box_text::after {
@@ -2530,9 +2529,11 @@ figure {
 }
 
 .qa_boxes {
+  margin: 0 auto;
   margin-top: 24px;
   display: flex;
   flex-direction: column;
+  max-width: 600px;
   gap: 12px;
 
   @include mq(pc) {
@@ -2707,7 +2708,7 @@ figure {
     padding: calc(40px - 8px) calc(56px - 8px);
     max-width: 1021px;
   }
-} 
+}
 
 .er_title {
   max-height: 110px;
@@ -2740,7 +2741,6 @@ figure {
 }
 
 .er-title_ja {
-
 }
 
 .er-contents {
@@ -2882,7 +2882,7 @@ figure {
 
 .contact_inner {
   margin: 0 auto;
-  max-width: 375px;
+  max-width: 600px;
 
   @include mq(pc) {
     max-width: 848px;
@@ -2992,7 +2992,7 @@ figure {
   border-radius: 8px;
   background: var(--LP-Gray, #f5f5f5);
 
-  width: 335px;
+  width: 100%;
   height: 56px;
   padding: 16px;
   color: var(--LP-Dark-Gray, #ccc);
@@ -3038,7 +3038,7 @@ figure {
   appearance: none;
   border: none;
   border-radius: 8px;
-  width: 335px;
+  width: 100%;
   height: 56px;
   padding: 16px;
   //フォント設定
@@ -3124,7 +3124,7 @@ figure {
 
 .form-textarea {
   border: none;
-  width: 335px;
+  width: 100%;
   height: 160px;
   padding: 16px;
 
@@ -3237,7 +3237,7 @@ figure {
 
 .info_inner {
   margin: 0 auto;
-  max-width: 335px;
+  max-width: 600px;
 
   @include mq(pc) {
     max-width: 1024px;
@@ -3319,8 +3319,9 @@ figure {
   line-height: 0; /* 行の高さをゼロにする */
   font-size: 0; /* 念のため文字サイズもゼロにする */
   iframe {
-    width: 335px;
-    height: 271px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 335 / 271;
   }
 
   @include mq(pc) {
